@@ -84,6 +84,9 @@ h2{
     position: relative;
     text-align: center;
  }
+ #ssvalue{
+    font-size: 2.5em;
+}
  #typeofroom{
     display: inline-block;
     width: 100%;
