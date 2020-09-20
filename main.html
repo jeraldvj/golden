@@ -1,1 +1,83 @@
-
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Prueba</title>
+        <link rel="stylesheet" href="css/mystyle.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="first">
+            <h1> HUAWEI digital experience</h1>
+            <h2> Estamos contigo desde casa</h2>
+        </section>
+        <section id="bloque1">
+            <span class="labely">¿Que dispositivo estas buscando?</span>
+            <div id="input1" class="telefono botton" onClick="asignarNota(1);">
+                TELEFONO
+            </div>
+            <div id="input2" class="tablet botton" onClick="asignarNota(1);">
+                TABLET
+            </div>
+            <div id="input3" class="accesorio botton" onClick="asignarNota(1);">
+                ACCESORIO
+            </div>
+            <div id="input4" class="laptop botton" onClick="asignarNota(1);">
+                LAPTOP
+            </div>
+        </section>
+        <section id="bloque2" style="display: none;">
+            <span class="labely">¿Cuanto piensas gastar?</span>
+            <div class="divided">
+                <label for="stormseverity"><b>Mueve el punto para elegir el monto</b><br>(En Bolivianos)<br></label>
+                <input type="range" id="typeofroom" value="0" min="700" max="7000" step="50" oninput="SSvalue(this.value)" onchange="SSvalue(this.value)">
+                <span id="ssvalue">700Bs</span><br>
+                <input type="submit" value="ENVIAR" onClick="asignarNota(2)">
+            </div>
+        </section>
+        <section id="bloque3" style="display: none;">
+            <div>
+                <span class="labely">Escoge la serie de tu HUAWEI</span>
+                <div class="Y2019 botton" onClick="asignarNota(3)">HUAWEI Y Serie 2019</div>
+                <div class="Y2020 botton" onClick="asignarNota(3)">HUAWEI Y Serie 2020</div>
+                <div class="P30 botton" onClick="asignarNota(3)">HUAWEI Serie P30</div>
+                <div class="P40 botton" onClick="asignarNota(3)">HUAWEI Serie P40</div>
+                <div class="MATE30 botton" onClick="asignarNota(3)">HUAWEI Serie Mate30</div>
+            </div>
+        </section>
+        <section id="bloque4" style="display: none;">
+            <span class="labely">Encontramos lo que buscabas</span>
+            <div>
+                <div><img src="images/Y9 Prime 2019.webp" alt="Y9 Prime 2019" width="500"></div>
+                <div class="botton specdetalle"><a class="spec" href="https://consumer.huawei.com/latin/phones/y9-prime-2019/" target="_blank">Especificaciones</a></div>
+                <div class="botton" onClick="asignarNota(4)">Contactar con un promotor</div>
+            </div>
+        </section>
+        <section id="bloque5" style="display: none;">
+            <span class="labely">¿En qué departamento de Bolivia estas actualmente?</span>
+            <div>
+                <div class="botton" onClick="asignarNota(5)">La Paz</div>
+                <div class="botton" onClick="asignarNota(5)">Cochabamba</div>
+                <div class="botton" onClick="asignarNota(5)">Santa Cruz</div>
+            </div>
+        </section>
+        <section id="bloque6" style="display: none;">
+            <span class="labely">Te presentamos a tu promotor</span>
+            <div>
+                <div><img src="images/dorian.jpg" alt="Promotor" width="500"></div>
+                <div class="caja">
+                    <h2 id="nombre">Dorian Gutierrez</h2>
+                    <h2 id="subtitu">Metodos de contacto</h2>
+                    <a id="what" onClick="asignarNota(6)" href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp-logo.png" alt="Whatsapp" width="100"></a>
+                    <a id="messe" onClick="asignarNota(6)" href="https://www.facebook.com/" target="_blank"><img src="images/messenger-logo.png" alt="Messenger" width="100"></a>
+                </div>
+            </div>
+        </section>
+        <section id="bloque7" style="display: none;">
+            <span class="labely">¡Gracias por elegirnos! <br></span>
+            <h2>Esperamos que te haya sido de mucha ayuda esta pagina para encontrar a tu promotor y obtener el producto que buscabas<br></h2>
+            <h2>Make it Posible with HUAWEI</h2>
+        </section>
+        <script src="js/myscript.js"></script>
+    </body>
+</html>

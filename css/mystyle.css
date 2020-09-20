@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#first{
+    position: relative;
+    padding: 2.5em;
+    background-color: red;
+}
+h1{
+    color: white;
+    font-size: 2em;
+}
+h2{
+    font-size: 1em;
+    color: white;
+}
+#bloque1{
+    display: grid;
+    padding: 4%;
+    background-color: #E2C4AC;
+    margin: auto;
+    width: 80%;
+    border-radius: 0 0 20px 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "spam spam"
+    "telefono accesorio"
+    "tablet laptop";
+}
+.labely{
+    display: block;
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 1em;
+    font-weight: bolder;
+    grid-area: spam;
+}
+.telefono{
+    grid-area: telefono;
+}
+.tablet{
+    grid-area: tablet;
+}
+.accesorio{
+    grid-area: accesorio;
+}
+.laptop{
+    grid-area: laptop;
+}
+.botton {
+    position: relative;
+    font-style: italic;
+    margin: .5em auto;
+    padding: 2em;
+    cursor: pointer;    
+    color: white;
+    border-radius: 15px;
+    background-color: red;
+    transition: background-color .3s linear;
+ }
+ .botton:hover{
+    background-color: wheat;
+    color: black;
+ }
+ #bloque2, #bloque3, #bloque4, #bloque5, #bloque6, #bloque7{
+    padding: 4%;
+    background-color: #E2C4AC;
+    margin: auto;
+    width: 80%;
+    border-radius: 0 0 20px 20px;
+ }
+  .divided{
+    position: relative;
+    text-align: center;
+ }
+ #typeofroom{
+    display: inline-block;
+    width: 100%;
+ }
+ label{
+    font-size: 1.2em;
+ }
+ input{
+    margin: .5em auto;
+    padding: 2em;
+    font-style: italic;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: background-color .3s linear;
+    border: none;
+ }
+ input:hover{
+    background-color: wheat;
+    color: black;
+ }
+ img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+ }
+.spec{
+    position: relative;
+    color: black;   
+    padding-right: 70%;
+    padding-left: 10%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: -2em;
+}
+.specdetalle{
+    background-color: white;
+}
+.caja{
+    display: grid;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "nombre nombre"
+    "subtitu subtitu"
+    "what messe";
+}
+#nombre{
+    grid-area: nombre;
+    text-align: center;
+    padding: .5em;
+    color: rgb(0, 0, 97);
+    margin-top: 1em;
+}
+#subtitu{
+    grid-area: subtitu;
+    text-align: center;
+    padding: .5em;
+    color: rgb(0, 0, 97);
+    margin-bottom: 1em;
+}
+#what{
+    grid-area: what;
+    width: 5em;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+#messe{
+    grid-area: messe;
+    width: 5em;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+}
+#bloque7 h2{
+    font-style: italic;
+    color: black;
+    margin: 1em;
+    font-size: 1em;
+}
